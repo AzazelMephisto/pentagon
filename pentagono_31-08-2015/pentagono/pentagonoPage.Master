@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pentagonoPage.master.cs" Inherits="pentagono.pentagonoPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/pent.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <div class="col-2"></div>
+    <div class="col-8 container">
+        <form id="form1" runat="server">
+        <header class="header">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Resources/she_logo.png" />
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/Resources/Logo_Aspen.jpg" ImageAlign="Right" Height="50px" Width="150px" />
+            <asp:Label ID="lbl_usrLabel" runat="server" Text="Usuario:"></asp:Label><asp:Label ID="lbl_usr" runat="server" Text=""></asp:Label>
+            <a href="logout.aspx"><asp:Label ID="lbl_logout" runat="server" Text="Salir"></asp:Label></a>
+             <div class="col-12" style="background-color:steelblue;padding:0px;"> 
+                <asp:Menu ID="mainMenu" runat="server" Orientation="Horizontal" DataSourceID="pentSiteMap" StaticDisplayLevels="2" CssClass="menu" ItemWrap="True" ClientIDMode="Inherit"></asp:Menu>
+            </div> 
+        </header>
+        <asp:ContentPlaceHolder ID="contenido" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer></footer>
+            <asp:SiteMapDataSource ID="pentSiteMap" runat="server" />
+     </form>
+    </div>
+    <div class="col-2"></div>
+</body>
+</html>

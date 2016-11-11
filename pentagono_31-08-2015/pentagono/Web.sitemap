@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Default.aspx" title="Inicio"  description="">
+        <siteMapNode url="dash-incidentes.aspx" title="Accidente/Incidente"  description="" >
+          <siteMapNode url="incidentes.aspx" title="Registro de Accidentes/Incidentes"  description="" />
+          <siteMapNode url="my-reports.aspx" title="Mis Accidentes/Incidentes"  description="" />
+          <siteMapNode url="actionPlan.aspx" title="Plan de Acción"  description="" />
+        </siteMapNode>
+        <siteMapNode url="dash-5s.aspx" title="5's"  description="" />
+        <siteMapNode url="dash-medioAmbiente" title="Medio ambiente"  description="" />
+        <siteMapNode url="dash-comportamiento.aspx" title="Observaciones de comportamiento"  description="" />
+        <siteMapNode url="dash-PDHS.aspx" title="P.D.H.S"  description="" />
+    </siteMapNode>
+</siteMap>

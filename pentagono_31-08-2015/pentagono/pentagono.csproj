@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40048366-63F9-41B4-B7E4-CFB5933D751B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pentagono</RootNamespace>
+    <AssemblyName>pentagono</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.2.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WebApplication3\packages\AjaxControlToolkit.15.1.2.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.8.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.8\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="accessDenied.aspx" />
+    <Content Include="Acciones-vos.aspx" />
+    <Content Include="actionPlan.aspx" />
+    <Content Include="AdminUsr.aspx" />
+    <Content Include="admin\areas.aspx" />
+    <Content Include="admin\aspects.aspx" />
+    <Content Include="admin\causes.aspx" />
+    <Content Include="admin\default.aspx" />
+    <Content Include="admin\inspects.aspx" />
+    <Content Include="admin\process.aspx" />
+    <Content Include="admin\users.aspx" />
+    <Content Include="agendaInspec.aspx" />
+    <Content Include="bitacora.aspx" />
+    <Content Include="CatAreaFicica.aspx" />
+    <Content Include="CatAreas.aspx" />
+    <Content Include="CatAspects.aspx" />
+    <Content Include="CatBehavior.aspx" />
+    <Content Include="CatCausas.aspx" />
+    <Content Include="CatFormatos.aspx" />
+    <Content Include="CatProcesos.aspx" />
+    <Content Include="css\pent.css" />
+    <Content Include="dash-actividades.aspx" />
+    <Content Include="dash-inspect.aspx" />
+    <Content Include="dash-vos.aspx" />
+    <Content Include="Graficas.aspx" />
+    <Content Include="inspectRes.aspx" />
+    <Content Include="inspects.aspx" />
+    <Content Include="investig.aspx" />
+    <Content Include="pdhs.aspx" />
+    <Content Include="pentagonoIpad.Master" />
+    <Content Include="WebForm5.aspx" />
+    <None Include="Properties\PublishProfiles\test.pubxml" />
+    <None Include="Resources\nextArrow_32px.png" />
+    <None Include="Resources\prevArrow_32px.png" />
+    <None Include="Resources\img-pdf.png" />
+    <None Include="Resources\cancel_48.png" />
+    <None Include="Resources\check_48.png" />
+    <Content Include="Resources\user_default.png" />
+    <Content Include="vos-review.aspx" />
+    <Content Include="vos.aspx" />
+    <Content Include="WebForm3.aspx" />
+    <Content Include="pentago_theme.Master" />
+    <Content Include="packages.config" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\she_logo_tumb.png" />
+    <None Include="Resources\Logo_Aspen.jpg" />
+    <None Include="Resources\she_logo.png" />
+    <Content Include="dash-incidentes.aspx" />
+    <Content Include="incid.aspx" />
+    <Content Include="incidDetail.aspx" />
+    <Content Include="investigation.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="my-reports.aspx" />
+    <Content Include="updatePanel.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Default.aspx" />
+    <Content Include="incidentes.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accessDenied.aspx.cs">
+      <DependentUpon>accessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accessDenied.aspx.designer.cs">
+      <DependentUpon>accessDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acciones-vos.aspx.cs">
+      <DependentUpon>Acciones-vos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acciones-vos.aspx.designer.cs">
+      <DependentUpon>Acciones-vos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="actionPlan.aspx.cs">
+      <DependentUpon>actionPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="actionPlan.aspx.designer.cs">
+      <DependentUpon>actionPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUsr.aspx.cs">
+      <DependentUpon>AdminUsr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUsr.aspx.designer.cs">
+      <DependentUpon>AdminUsr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\areas.aspx.cs">
+      <DependentUpon>areas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\areas.aspx.designer.cs">
+      <DependentUpon>areas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\aspects.aspx.cs">
+      <DependentUpon>aspects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\aspects.aspx.designer.cs">
+      <DependentUpon>aspects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\causes.aspx.cs">
+      <DependentUpon>causes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\causes.aspx.designer.cs">
+      <DependentUpon>causes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\inspects.aspx.cs">
+      <DependentUpon>inspects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\inspects.aspx.designer.cs">
+      <DependentUpon>inspects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\process.aspx.cs">
+      <DependentUpon>process.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\process.aspx.designer.cs">
+      <DependentUpon>process.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="agendaInspec.aspx.cs">
+      <DependentUpon>agendaInspec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agendaInspec.aspx.designer.cs">
+      <DependentUpon>agendaInspec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bitacora.aspx.cs">
+      <DependentUpon>bitacora.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bitacora.aspx.designer.cs">
+      <DependentUpon>bitacora.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatAreaFicica.aspx.cs">
+      <DependentUpon>CatAreaFicica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatAreaFicica.aspx.designer.cs">
+      <DependentUpon>CatAreaFicica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatAreas.aspx.cs">
+      <DependentUpon>CatAreas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatAreas.aspx.designer.cs">
+      <DependentUpon>CatAreas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatAspects.aspx.cs">
+      <DependentUpon>CatAspects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatAspects.aspx.designer.cs">
+      <DependentUpon>CatAspects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatBehavior.aspx.cs">
+      <DependentUpon>CatBehavior.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatBehavior.aspx.designer.cs">
+      <DependentUpon>CatBehavior.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatCausas.aspx.cs">
+      <DependentUpon>CatCausas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatCausas.aspx.designer.cs">
+      <DependentUpon>CatCausas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatFormatos.aspx.cs">
+      <DependentUpon>CatFormatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatFormatos.aspx.designer.cs">
+      <DependentUpon>CatFormatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatProcesos.aspx.cs">
+      <DependentUpon>CatProcesos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatProcesos.aspx.designer.cs">
+      <DependentUpon>CatProcesos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dash-vos.aspx.cs">
+      <DependentUpon>dash-vos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dash-vos.aspx.designer.cs">
+      <DependentUpon>dash-vos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="funci.cs" />
+    <Compile Include="funcPDF.cs" />
+    <Compile Include="dash-actividades.aspx.cs">
+      <DependentUpon>dash-actividades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dash-actividades.aspx.designer.cs">
+      <DependentUpon>dash-actividades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dash-incidentes.aspx.cs">
+      <DependentUpon>dash-incidentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dash-incidentes.aspx.designer.cs">
+      <DependentUpon>dash-incidentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dash-inspect.aspx.cs">
+      <DependentUpon>dash-inspect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dash-inspect.aspx.designer.cs">
+      <DependentUpon>dash-inspect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Graficas.aspx.cs">
+      <DependentUpon>Graficas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Graficas.aspx.designer.cs">
+      <DependentUpon>Graficas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewGroup.cs" />
+    <Compile Include="GridViewGroupList.cs" />
+    <Compile Include="GridViewHelper.cs" />
+    <Compile Include="GridViewSummary.cs" />
+    <Compile Include="GridViewSummaryList.cs" />
+    <Compile Include="incid.aspx.cs">
+      <DependentUpon>incid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="incid.aspx.designer.cs">
+      <DependentUpon>incid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="incidDetail.aspx.cs">
+      <DependentUpon>incidDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="incidDetail.aspx.designer.cs">
+      <DependentUpon>incidDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inspectRes.aspx.cs">
+      <DependentUpon>inspectRes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inspectRes.aspx.designer.cs">
+      <DependentUpon>inspectRes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inspects.aspx.cs">
+      <DependentUpon>inspects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inspects.aspx.designer.cs">
+      <DependentUpon>inspects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="investig.aspx.cs">
+      <DependentUpon>investig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="investig.aspx.designer.cs">
+      <DependentUpon>investig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="investigation.aspx.cs">
+      <DependentUpon>investigation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="investigation.aspx.designer.cs">
+      <DependentUpon>investigation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="my-reports.aspx.cs">
+      <DependentUpon>my-reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="my-reports.aspx.designer.cs">
+      <DependentUpon>my-reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pdhs.aspx.cs">
+      <DependentUpon>pdhs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pdhs.aspx.designer.cs">
+      <DependentUpon>pdhs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pentagonoData.cs">
+      <DependentUpon>pentagonoData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pentagonoData1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pentagonoData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pentagonoIpad.Master.cs">
+      <DependentUpon>pentagonoIpad.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pentagonoIpad.Master.designer.cs">
+      <DependentUpon>pentagonoIpad.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pentagonoPage.Master.cs">
+      <DependentUpon>pentagonoPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pentagonoPage.Master.designer.cs">
+      <DependentUpon>pentagonoPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pentago_theme.Master.cs">
+      <DependentUpon>pentago_theme.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pentago_theme.Master.designer.cs">
+      <DependentUpon>pentago_theme.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="incidentes.aspx.cs">
+      <DependentUpon>incidentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="incidentes.aspx.designer.cs">
+      <DependentUpon>incidentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="updatePanel.aspx.cs">
+      <DependentUpon>updatePanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updatePanel.aspx.designer.cs">
+      <DependentUpon>updatePanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vos-review.aspx.cs">
+      <DependentUpon>vos-review.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vos-review.aspx.designer.cs">
+      <DependentUpon>vos-review.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vos.aspx.cs">
+      <DependentUpon>vos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vos.aspx.designer.cs">
+      <DependentUpon>vos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm5.aspx.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm5.aspx.designer.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pentagonoData.xsc">
+      <DependentUpon>pentagonoData.xsd</DependentUpon>
+    </Content>
+    <None Include="pentagonoData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pentagonoData1.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="pentagonoData.xss">
+      <DependentUpon>pentagonoData.xsd</DependentUpon>
+    </Content>
+    <Content Include="pentagonoPage.Master" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pdf\inspects\" />
+    <Folder Include="uploaded\actions\" />
+    <Folder Include="uploaded\inspects\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\pent\pent.csproj">
+      <Project>{0eef3369-eb26-4828-a874-ff7920615498}</Project>
+      <Name>pent</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55441</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53392/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

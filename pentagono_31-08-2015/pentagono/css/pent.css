@@ -1,0 +1,239 @@
+﻿body {
+    font-family:"Helvetica";
+    background:linear-gradient(silver,lightSteelBlue)
+}
+* {
+    box-sizing: border-box;
+    
+}
+input {
+    border-color:#A6C9E2;
+    border-width:1px;
+    border-radius:4px;
+}
+select {
+    border-radius:5px;
+    background-color:#EBF5FD;
+    color:#4297D7;
+    font-weight:bold;
+    border-color:#A6C9E2;
+    border-width:1px;
+    margin-bottom: 5px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    background-color: steelblue;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li a {
+    color:#fff;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/*[class*="col-"] {
+    float: left;
+    padding: 15px;
+}*/
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #fefefe;
+    color: #2E91C9;
+    margin-bottom:10px;
+}
+.header img {
+margin-left:15px;
+margin-right:15px;
+}
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For mobile phones: */
+/*[class*="col-"] {
+    width: 100%;
+}
+[class*=field] {
+    width:100%;
+}
+h1 {
+    color:#3b608f;
+    font-size:20pt;
+    font-family:"Helvetica";
+}
+h2 {
+    color:#3b608f;
+    font-size:18pt;
+    font-family:"Helvetica";
+}*/
+.table-employee {font-size:12px;}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-12 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    .field {width:80%}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .field {width:70%}
+}
+.container {
+    background-color: rgba(190, 218, 254, 1);
+    border-radius:10px;
+    border-color:white;
+    border-width:thin;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.MyCalendar .ajax__calendar_container {
+    border: 1px solid rgba(0,0,0,0.12);
+    background-color: #FCFDFD;
+    color:#2E91C9;
+}
+.MyCalendar .ajax__calendar_header {
+    background:linear-gradient(#87B6D9, #4297D7);
+    padding-top:4px;
+    padding-bottom:3px;
+    border-radius:4px;
+    height:25px;
+    color:white;
+}
+.MyCalendar .ajax__calendar_invalid .ajax__calendar_day{
+    text-decoration:line-through;
+    cursor:default;
+    color:#A4A4A4 ;
+    background-color:#EFFBF8;
+    border:0px;
+}
+.MyCalendar .ajax__calendar_active .ajax__calendar_day {
+    background-color:#FBEC88;
+    border:1px solid #FAD42E;
+}
+.MyCalendar .ajax__calendar_prev,.MyCalendar .ajax__calendar_next {
+     background-color:#D8E7F3;
+     border-radius:5px;
+     margin-left:3px;
+     margin-right:3px;
+}
+.MyCalendar .ajax__calendar_dayname {
+    color:black;
+}
+.MyCalendar .ajax__calendar_day {
+    background-color:#EBF5FD;
+    border-color:#C5DBEC;
+    border-width:1px;
+    border-style:solid;
+    width:22px;
+    height:20px;
+}
+.MyCalendar .ajax__calendar_days {
+    width:160px;
+}
+.MyCalendar .ajax__calendar_other .ajax__calendar_day{
+    background-color:#FEFEFE;
+    border:0px;
+    color:gray;
+}
+.alginRight {
+    text-align:right;
+}
+.dataIncident .datos {
+    width:33%;
+}
+.etiqueta {
+font-weight:bold;
+}
+.modalShadow {
+    background-color: #808080;
+    opacity:0.7;
+}
+.modalPanel {
+    background-color:#FEFEFE;
+    text-align:center;
+    padding:10px;
+    font-family:Helvica;
+    font-size:14px;
+    font-weight:bold;
+    border-radius:5px;
+}
+.gridHeader {
+    background:linear-gradient(#87B6D9, #4297D7);
+    color:#FEFEFE;
+}
+.formFields{
+	display:block;
+	float:left;
+	margin-bottom:10px;
+	font-size:13px;
+}
+.campos{
+	float:left;
+	display:block;
+	margin-bottom:8px;
+}
+.campos label{
+	min-width:100px;
+	width:130px;
+	float:left;
+	text-align:right;
+}
+#contenido_grv_incidents td {
+    font-size:small;
+}
+.loginCenter{
+    margin-right:auto;
+    margin-left:auto;
+}
+.bitacora tr td{
+    padding-left:2px;
+    padding-right:2px;
+}
+.disapear{
+    width:1px;
+}
